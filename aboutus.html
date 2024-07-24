@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>    
+    .container h6{
+      font-family: myFirstFont;
+      color:goldenrod;
+      font-size:20px;
+    }    
+      body {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #E8E8E8;
+        padding-top: 80px;
+      }
+      .text-white{
+        text-decoration: none;
+      }
+      h1 {
+        font-family: 'myFirstFont', sans-serif;
+        font-size: 4rem;
+        color: goldenrod;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      .navbar-brand img {
+        width: 160px;
+        height: 60px;
+      }
+      .form-control {
+        height: 40px;
+        width: 600px;
+      }
+      .navbar-nav .nav-item {
+        margin-right: 20px;
+      }
+      .category-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .category-card {
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      df-messenger {
+        --df-messenger-bot-message: #E8E8E8;
+        --df-messenger-button-titlebar-color: #4B0082;
+        --df-messenger-chat-background-color: #FAFAFA;
+        --df-messenger-font-color: black;
+        --df-messenger-send-icon: #00BFA5;
+        --df-messenger-user-message: #D8BFD8;
+        --df-messenger-font-family: 'myFirstFont', sans-serif;
+        --df-messenger-chat-bubble-color: #FFFFFF;
+        --df-messenger-chat-bubble-font-color: black;
+      }
+      @font-face {
+        font-family: 'myFirstFont';
+        src: url('HARRYP__.TTF') format('truetype');
+      }
+      .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+        padding: 20px;
+        max-width: 1200px;
+      }
+      .about-text {
+        flex: 1;
+        margin-right: 20px;
+        font-size: 17px;
+      }
+      .about-image {
+        flex: 1;
+        max-width: 500px;
+      }
+      .about-image img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      /*-----Testimonial-------*/
+      .testimonial {
+        min-height: 375px;
+        position: relative;
+        background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .testimonial:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: " ";
+        background: url(img/testimonial.bg-top.png);
+        background-size: 100% 100px;
+        width: 100%;
+        height: 100px;
+        z-index: 99;
+      }
+
+      #testimonial4 .carousel-inner:hover {
+        cursor: grab;
+      }
+
+      #testimonial4 .carousel-inner:active {
+        cursor: grabbing;
+      }
+
+      .testimonial4_indicators .carousel-indicators {
+        left: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 0;
+        height: 20px;
+        bottom: 15px;
+        padding: 0 5px;
+        cursor: e-resize;
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: absolute;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .testimonial4_indicators .carousel-indicators li {
+        padding: 0;
+        width: 14px;
+        height: 14px;
+        border: none;
+        text-indent: 0;
+        margin: 2px 3px;
+        cursor: pointer;
+        display: inline-block;
+        background: #ffffff;
+        border-radius: 50%;
+      }
+
+      .testimonial4_indicators .carousel-indicators .active {
+        background-color: #9dd3af;
+      }
+
+      .testimonial4_indicators .carousel-indicators::-webkit-scrollbar {
+        height: 3px;
+      }
+
+      .testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb {
+        background: #eeeeee;
+      }
+
+      .testimonial4_control_button .carousel-control {
+        top: 175px;
+        opacity: 1;
+        width: 40px;
+        bottom: auto;
+        height: 40px;
+        font-size: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        overflow: hidden;
+        line-height: 38px;
+        text-align: center;
+        background: transparent;
+        border: 2px solid #ffffff;
+        text-transform: uppercase;
+        border-radius: 50%;
+        box-shadow: none;
+        transition: all 0.6s cubic-bezier(0.3,1,0,1);
+      }
+      .nitty-gritty-section {
+        padding: 40px 0;
+        text-align: center;
+      }
+      .nitty-gritty-section .icon {
+        font-size: 3rem;
+        color: goldenrod;
+      }
+      .nitty-gritty-section .text {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        color: #E8E8E8;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#"><img src="hogsmeade.png" alt="Hogsmeade"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Find Your Bewitched Essentials" aria-label="Search">
+      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="login.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <a class="dropdown-item" href="signup.html">Signup</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <video width="1320" height="540" controls>
+      <source src="hogsmeade.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <hr style="background-color: goldenrod;height:4px;">
+    <div class="about-container">
+      <div class="about-text">
+        <h1>About Us</h1>
+        <p>Welcome to the magical world of Hogsmeade, now brought to life in the digital realm! Once a charming wizarding village renowned for its enchanting shops and cozy havens, Hogsmeade has evolved into a premier online destination, offering a secure and immersive shopping experience. Despite the shadows cast by dark forces, our beloved village's essence remains intact through our virtual storefronts, where you can explore and purchase an array of magical goods, from spellbinding sweets to enchanted artifacts. Immerse yourself in the magic of Hogsmeade, where every visit is a journey into a world of wonder and enchantment, all from the comfort of your own home.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3h0OWpjbWYxMTBocThlazc0cXVocG1zbWd2M2Fwemt5ZGwxdWZreSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10NOHKiH06nny0/giphy.webp" alt="Hogsmeade">
+      </div>
+    </div>
+    <hr style="background-color: goldenrod;height:4px;">
+
+    <div class="nitty-gritty-section">
+      <center>
+        <h1>Nitty-Gritty Details</h1>
+      </center>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="icon">
+              <i class="fas fa-magic"></i>
+            </div>
+            <div class="text">
+              Magical Experience
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="text">
+              Secure Shopping
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon">
+              <i class="fas fa-dove"></i>
+            </div>
+            <div class="text">
+              Fast Delivery
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="background-color: goldenrod;height:4px;margin-bottom:-1px;">
+
+    <div class="testimonial">  
+      <section id="testimonial" class="testimonial text-center">
+        <div class="container">
+          <div class="heading white-heading">
+           <h1 style="color:goldenrod;">Testimonials</h1> 
+          </div>
+          <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="testimonial4_slide">
+                  <img style="width:300px;height:200px;" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXAyajY3a2MyZ3Rid3Y0ZmRtNWpybnlqdDFneHVpN2I1OG05NzI0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mz1kJeDVueKC4/giphy.webp">
+                  <br><br><p style="font-size:20px;">I've always found Hogsmeade to be a place of wonder and adventure, now perfectly captured online."</p>
+                  <h4>Harry Potter</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial4_slide">
+                  <img  style="width:300px;height:200px;"  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXBkazRvNjB3d3hzdnN3NHpkOTV5eHg5eWphMGZ6emd3d2JhZGwzayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wmfcU5GfePQAg/giphy.webp" class="img-circle img-responsive" />
+                  <br><br> <p style="font-size:20px;"> Hogsmeade's essence remains untainted, even in the digital age, offering magic to all.</p>
+                  <h4>Cornelius Fudge</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial4_slide">
+                  <img  style="width:300px;height:200px;" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenpqeGgzcmd5Y2Z1ZHJ4N3BzYXBrMWM1Ym1pcTExM2hqMzZ5YTAzaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x8m7Snrt1LwPexWy5D/giphy.webp" class="img-circle img-responsive" />
+                  <br><br>   <p style="font-size:20px;">Hogsmeade's essence remains untainted, even in the digital age, offering magic to all.</p>
+                  <h4>Albus Dumbledore</h4>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonial4" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial4" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: goldenrod"
+             >
+      <!-- Left -->
+      <div class="me-5" style="color:black;font-weight: bold;">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/CodingPuls84957" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/ravithegreat2022/" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ArnavVashisthCodingAccountnew" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Hogsmeade</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p>
+             An online ecommerce platform that allows you to order enchanting items from Hogsmeade.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Shops</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p>
+              <a href="honeydukes.html" class="text-white">Honeydukes</a>
+            </p>
+            <p>
+              <a href="zonkoshop.html" class="text-white">Zonko's Joke Shop</a>
+            </p>
+            <p>
+              <a href="scrivenshaft.html" class="text-white">Scrivenshaft's Quill Shop</a>
+            </p>
+            <p>
+              <a href="galdragswizardwear.html" class="text-white">Galdrags Wizardwear</a>
+            </p>
+            <p>
+              <a href="threebroomsticks.html" class="text-white">Three Broomsticks Inn</a>
+            </p>
+            <p>
+              <a href="magicneep.html" class="text-white">Magic Neep</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+            />
+            <p>
+              <a href="login.html" class="text-white">Login</a>
+            </p>
+            <p>
+              <a href="signup.html" class="text-white">Signup</a>
+            </p>
+            <p>
+              <a href="index.html" class="text-white">Chat with Us</a>
+            </p>
+       
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Hogsmeade Market</p>
+            <p><i class="fas fa-envelope mr-3"></i> care@hogsmeadeonline.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div> 
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2);"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="index.html"
+         >Hogsmeade Online</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</div>
+<!-- End of .container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="
