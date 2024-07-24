@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        
+        .carousel-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+        @font-face {
+            font-family: myFirstFont;
+            src: url(HARRYP__.TTF)format('truetype');;
+        }
+        .carousel-inner img {
+            border-radius: 15px;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .navbar-brand img {
+            width: 160px;
+            height: 60px;
+        }
+        .form-control {
+            height: 40px;
+            width: 600px;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 20px;
+        }
+        .category-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-card {
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px; /* Add margin-bottom for spacing between cards */
+        }
+        body {
+            padding-top: 80px; /* Adjust based on the height of the navbar */
+        }
+        df-messenger {
+            --df-messenger-bot-message: #E8E8E8;
+            --df-messenger-button-titlebar-color: #4B0082;
+            --df-messenger-chat-background-color: #FAFAFA;
+            --df-messenger-font-color: black;
+            --df-messenger-send-icon: #00BFA5;
+            --df-messenger-user-message: #D8BFD8;
+            --df-messenger-font-family: 'myFirstFont', sans-serif;
+            --df-messenger-chat-bubble-color: #FFFFFF;
+            --df-messenger-chat-bubble-font-color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="hogsmeade.png" alt="Hogsmeade"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Find Your Bewitched Essentials" aria-label="Search">
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="login.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="signup.html">Signup</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#"><img src="banner.gif" class="d-block mx-auto" alt="Slide 1"></a>
+                </div>
+                <div class="carousel-item active">
+                    <a href="#"><img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/10/gringotts-bank.jpg" class="d-block mx-auto" alt="Slide 1"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="https://www.creativeuncut.com/gallery-45/art/hl-hogsmeade-shop-signs.jpg" class="d-block mx-auto" alt="Slide 2"></a>
+                </div>
+  
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <h1 style="font-weight: bold; margin-left:40px;">Trending Shops</h1>
+    <div class="category-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <a href="honeydukes.html"><img src="honeydukes.gif" alt="Honeydukes SweetShop"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Honeydukes SweetShop</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <a href="zonkoshop.html"><img src="zonko.gif" alt="Zonko’s Joke Shop"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Zonko’s Joke Shop</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <a href="scrivenshaft.html"><img src="scrivenshaft.gif" alt="Scrivenshaft's Quill Shop"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Scrivenshaft's Quill Shop</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <a href="galdragswizardwear.html"><img src="galdragswizardwear.gif" alt="Gladrags Wizardwear"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Gladrags Wizardwear</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <a href="threebroomsticks.html"><img src="threebroomsticksinn.gif" alt="Three Broomsticks Inn"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Three Broomsticks Inn</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <a href="magicneep.html"><img src="themagicneep.gif" alt="The Magic Neep"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Magic Neep</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <df-messenger
+  intent="WELCOME"
+  chat-title="Hogsmeade"
+  agent-id="869a719b-45f2-43f5-a2a4-13412de55249"
+  language-code="en"
+></df-messenger>
+<!-- Jquery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    //To minimise the height of chatbox
+    $(document).ready(function() {
+        window.addEventListener('dfMessengerLoaded', function (event) {
+        $r1 = document.querySelector("df-messenger");
+        $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+        $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+        var sheet = new CSSStyleSheet;
+        // manage box height from here
+        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 350px }`);
+        $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+        });
+    });
+</script>
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: goldenrod"
+             >
+      <!-- Left -->
+      <div class="me-5" style="color:black;font-weight: bold;">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/CodingPuls84957" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/ravithegreat2022/" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ArnavVashisthCodingAccountnew" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Hogsmeade</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p>
+             An online ecommerce platform that allows you to order enchanting items from Hogsmeade.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Shops</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p>
+              <a href="honeydukes.html" class="text-white">Honeydukes</a>
+            </p>
+            <p>
+              <a href="zonkoshop.html" class="text-white">Zonko's Joke Shop</a>
+            </p>
+            <p>
+              <a href="scrivenshaft.html" class="text-white">Scrivenshaft's Quill Shop</a>
+            </p>
+            <p>
+              <a href="galdragswizardwear.html" class="text-white">Galdrags Wizardwear</a>
+            </p>
+            <p>
+              <a href="threebroomsticks.html" class="text-white">Three Broomsticks Inn</a>
+            </p>
+            <p>
+              <a href="magicneep.html" class="text-white">Magic Neep</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+            />
+            <p>
+              <a href="login.html" class="text-white">Login</a>
+            </p>
+            <p>
+              <a href="signup.html" class="text-white">Signup</a>
+            </p>
+            <p>
+              <a href="index.html" class="text-white">Chat with Us</a>
+            </p>
+       
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Hogsmeade Market</p>
+            <p><i class="fas fa-envelope mr-3"></i> care@hogsmeadeonline.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div> 
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2);"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="index.html"
+         >Hogsmeade Online</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

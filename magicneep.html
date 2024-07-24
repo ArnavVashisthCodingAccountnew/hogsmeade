@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS --> 
+    <style>
+            img{
+            width:365px;
+            height:170px;
+        }
+        .carousel-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+        .carousel-inner img {
+            border-radius: 15px;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .navbar-brand img {
+            width: 160px;
+            height: 60px;
+        }
+        .form-control {
+            height: 40px;
+            width: 600px;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 20px;
+        }
+        .category-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-card {
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px; /* Add margin-bottom for spacing between cards */
+        }
+        body {
+            padding-top: 80px; /* Adjust based on the height of the navbar */
+        }
+        .price-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ffc107;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .item-card {
+            position: relative;
+            transition: transform 0.3s;
+        }
+        .item-card:hover {
+            transform: scale(1.05);
+        }
+        .item-card img {
+            border-bottom: 2px solid #ffc107;
+        }
+        @font-face {
+            font-family: myFirstFont;
+            src: url(HARRYP__.TTF);
+        }
+        h1{
+            font-family:myFirstFont;
+            font-size:100px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="hogsmeade.png" alt="Hogsmeade"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Find Your Bewitched Essentials" aria-label="Search">
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="login.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="signup.html">Signup</a>
+                       
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="category-container">
+        <h1 class="text-center" style="font-weight: bold; margin-bottom: 45px;">
+            The Magic Neep
+        </h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card item-card">
+                    <img onClick="alert('This functionality is not working as this is a pilot scale project.')"  src="https://img.freepik.com/premium-photo/organic-vegetables-farmers-hands-with-freshly-picked-vegetables-fresh-organic-potatoes-fruits-vegetables-market_209729-1736.jpg" class="card-img-top" alt="Freshly Picked Vegetables">
+                    <div class="card-body">
+                        <h5 onClick="alert('This functionality is not working as this is a pilot scale project.')"  class="card-title">Freshly Picked Vegetables</h5>
+                        <p class="card-text">Farm-fresh magical vegetables ideal for any wizarding feast.</p>
+                        <div class="price-tag">7 S</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card item-card">
+                    <img onClick="alert('This functionality is not working as this is a pilot scale project.')"  src="https://images.squarespace-cdn.com/content/v1/5af5f71c0dbda32cd6252624/1600124825571-X4X4BG6FY4PWF0LI21M9/AdobeStock_233251307+magical+herbs.jpeg" class="card-img-top" alt="Magical Herbs and Spices">
+                    <div class="card-body">
+                        <h5 onClick="alert('This functionality is not working as this is a pilot scale project.')"  class="card-title">Magical Herbs and Spices</h5>
+                        <p class="card-text">Special herbs and spices that add a touch of magic to your cooking.</p>
+                        <div class="price-tag">5 S</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card item-card">
+                    <img onClick="alert('This functionality is not working as this is a pilot scale project.')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTus8H8yukuT3iN5EltxNtPnuMXIDqf1nc2kw&s" class="card-img-top" alt="Enchanted Fruits">
+                    <div class="card-body">
+                        <h5 onClick="alert('This functionality is not working as this is a pilot scale project.')"  class="card-title">Enchanted Fruits</h5>
+                        <p class="card-text">Fruits with magical properties that enhance flavor and health benefits.</p>
+                        <div class="price-tag">6 S</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: goldenrod"
+             >
+      <!-- Left -->
+      <div class="me-5" style="color:black;font-weight: bold;">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/CodingPuls84957" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/ravithegreat2022/" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a onClick="alert('This social media account is not available at the moment.Kindly check Github , X and Instagram for functionality.')" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ArnavVashisthCodingAccountnew" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Hogsmeade</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p>
+             An online ecommerce platform that allows you to order enchanting items from Hogsmeade.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Shops</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p>
+              <a href="honeydukes.html" class="text-white">Honeydukes</a>
+            </p>
+            <p>
+              <a href="zonkoshop.html" class="text-white">Zonko's Joke Shop</a>
+            </p>
+            <p>
+              <a href="scrivenshaft.html" class="text-white">Scrivenshaft's Quill Shop</a>
+            </p>
+            <p>
+              <a href="galdragswizardwear.html" class="text-white">Galdrags Wizardwear</a>
+            </p>
+            <p>
+              <a href="threebroomsticks.html" class="text-white">Three Broomsticks Inn</a>
+            </p>
+            <p>
+              <a href="magicneep.html" class="text-white">Magic Neep</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+            />
+            <p>
+              <a href="login.html" class="text-white">Login</a>
+            </p>
+            <p>
+              <a href="signup.html" class="text-white">Signup</a>
+            </p>
+            <p>
+              <a href="index.html" class="text-white">Chat with Us</a>
+            </p>
+       
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: rgb(255, 205, 80); height: 4px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Hogsmeade Market</p>
+            <p><i class="fas fa-envelope mr-3"></i> care@hogsmeadeonline.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div> 
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2);"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="index.html"
+         >Hogsmeade Online</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
