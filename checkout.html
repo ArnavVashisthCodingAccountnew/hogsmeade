@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(HARRYP__.TTF);
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background: rgba(0, 0, 0, 0.8);
+            padding-top: 80px;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #f0e6d2;
+            font-family: 'Cinzel', serif;
+            margin: 0;
+        }
+        .flex-container {
+  display: flex;
+  flex-direction: row;
+
+}
+        .navbar-brand img {
+            width: 160px;
+            height: 60px;
+        }
+        .form-control {
+            height: 40px;
+            width: 600px;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 20px;
+        }
+        .checkout-container {
+            padding: 40px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            width: 90%;
+            color: #f0e6d2;
+        }
+        .checkout-title {
+            font-family: 'Cinzel Decorative', serif;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffc107;
+        }
+        .checkout-summary, .checkout-form, .order-review {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .checkout-summary h3, .checkout-form h3, .order-review h3 {
+            font-family: 'Cinzel Decorative', serif;
+        }
+        .checkout-summary p, .checkout-form p, .order-review p {
+            margin-bottom: 10px;
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border: none;
+            color: #2c2c2c;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #ffdd57;
+            color: #2c2c2c;
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 5px;
+        }
+        .progress {
+            height: 30px;
+            background-color: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 30px;
+            line-height: 30px;
+            background-color: #ffc107;
+            text-align: center;
+            color: #2c2c2c;
+            font-weight: bold;
+        }
+        .review-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        
+/* If you like this, please check my blog at codedgar.com.ve */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+.card{
+  background:#d3a518;  border-radius:14px; max-width: 400px; display:block; margin:auto;
+  padding:60px; padding-left:20px; padding-right:20px;box-shadow: 2px 10px 40px black; z-index:99;
+}
+
+.logo-card{max-width:80px; margin-bottom:15px; margin-top: -19px;}
+
+.container label{display:flex; font-size:15px; font-weight:bold; color:black; opacity:.4;}
+
+.container input{font-family: 'Work Sans', sans-serif;background:transparent; border:none; border-bottom:1px solid transparent; color:#dbdce0; transition: border-bottom .4s;}
+.container input:focus{border-bottom:1px solid #1abc9c; outline:none;}
+
+.cardnumber{display:block; font-size:20px; margin-bottom:8px; }
+
+.name{display:block; font-size:15px; max-width: 200px; float:left; margin-bottom:15px;}
+
+.toleft{float:left;}
+.ccv{width:50px; margin-top:-2px; font-size:15px; margin-left:5px;}
+
+.receipt{background: #dbdce0; border-radius:4px; padding:5%; padding-top:200px; max-width:600px; display:block; margin:auto; margin-top:-180px; z-index:-999; position:relative;}
+
+.col{width:50%; float:left;}
+.bought-item{background:#f5f5f5; padding:2px;}
+.bought-items{margin-top:-3px;}
+
+.cost{color:#3a7bd5;}
+.seller{color: #3a7bd5;}
+.description{font-size: 13px;}
+.price{font-size:12px;}
+.comprobe{text-align:center;}
+.proceed{position:absolute; transform:translate(300px, 10px); width:50px; height:50px; border-radius:50%; background:#1abc9c; border:none;color:white; transition: box-shadow .2s, transform .4s; cursor:pointer;}
+.proceed:active{outline:none; }
+.proceed:focus{outline:none;box-shadow: inset 0px 0px 5px white;}
+.sendicon{filter:invert(100%); padding-top:2px;}
+
+@media (max-width: 600px){
+  .proceed{transform:translate(250px, 10px);}
+  .col{display:block; margin:auto; width:100%; text-align:center;}
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+height:60px;
+  width:300px;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="hogsmeade.png" alt="Hogsmeade"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Find Your Bewitched Essentials" aria-label="Search">
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Returns and Orders</a>
+                </li>
+            </ul>
+    </nav>
+    <div class="flex-container">
+
+<div style="margin-top: 70px; margin-left: 50px; padding-right:200px;">
+    <h1>Information</h1>
+
+    <form action="/action_page.php">
+   <b><label style="font-size:25px;" for="fname">Name:</label><br></b> <br>
+    <input type="text" id="fname" name="fname"><br><br>
+    <b><label style="font-size:25px;" for="lname">House:</label><br></b> <br>
+
+    <form action="/action_page.php">
+        <select name="cars" id="cars" style="width:240px;">
+          <option value="volvo">Gryffindor</option>
+          <option value="saab">Hufflepuff</option>
+          <option value="opel">Slytherin</option>
+          <option value="audi">Ravenclaw</option>
+        </select>
+        <br><br>
+      </form>
+        <b><label style="font-size:25px;" for="lname">Delivery at:</label><br></b><br> 
+      <button >Owlery</button>
+      <button id="okButton">Dormitory</button>
+          <br><br>
+          <input type="text" id="Dormitory" value="Dormitory Room number" hidden="true">
+
+  </form>
+</div>
+  <div style="margin-top:70px;">
+    <h1>Gringotts Payment System</h1>
+    
+
+    <div class="container">
+        <div class="card">
+      
+        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+      </svg></button>
+         <img src="gringotts.png" class="logo-card">
+       <label>Card number:</label>
+       <input id="user" type="text" class="input cardnumber"  placeholder="1234 5678 9101 1121">
+       <label>Name:</label>
+       <input class="input name"  placeholder="Albus Dumbledore">
+       <label class="toleft">CCV:</label>
+       <input class="input toleft ccv" placeholder="321">
+        </div>
+       
+</div>
+<!-- designed by me... enjoy! -->
+ <br><br>
+ <center><!-- designed by me... enjoy! -->
+    <div class="wrapper">
+      <a class="cta" href="thankyou.html">
+        <span>SUBMIT</span>
+        <span>
+          <svg width="46px" height="33px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </span> 
+      </a>
+    </div>
+    
+</center>
+<script>
+    document.getElementById("okButton").addEventListener(
+  "click",
+  () => {
+    document.getElementById("Dormitory").hidden = false;
+  },
+  false,
+  
+);
+document.getElementById("okButton2").addEventListener(
+  "click",
+  () => {
+    document.getElementById("Dormitory").hidden = true;
+  },
+  false,
+  
+);
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
